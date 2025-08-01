@@ -2,4 +2,5 @@ Simple clone the repository and install the dependencies
 open the vs code terminal and navigate to frontend folder and write code "cd frontend" then press enter. After it write "npm install" , it will install all the dependencies.
 repeat the same process for backend folder.
 run both folder using npm start and npm run debug.
+Also in .env file Add your own Mongourl
 enjoy the todoApp
