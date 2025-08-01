@@ -1,6 +1,101 @@
-Simple clone the repository and install the dependencies
-open the vs code terminal and navigate to frontend folder and write code "cd frontend" then press enter. After it write "npm install" , it will install all the dependencies.
-repeat the same process for backend folder.
-run both folder using npm start and npm run debug.
-Also in .env file Add your own Mongourl
-enjoy the todoApp
+
+# 📝 TodoApp
+
+A simple and responsive Todo Application built using the **MERN stack** (MongoDB, Express.js, React, Node.js). This app allows users to create, update, mark as complete, and delete tasks.
+
+## 🚀 Features
+
+- Create, read, update, and delete (CRUD) todos
+- Mark tasks as completed/incomplete
+- Responsive UI using React
+- Backend API using Express and MongoDB
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- React
+- Axios
+- CSS / Tailwind / Bootstrap
+
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB (with Mongoose)
+
+## 📁 Folder Structure
+
+```
+
+todoapp/
+├── client/             # React frontend
+│   ├── src/
+│   │   ├── components/
+│   │   ├── App.js
+│   │   └── index.js
+├── server/             # Node.js backend
+│   ├── models/
+│   ├── routes/
+│   ├── controllers/
+│   ├── server.js
+│   └── .env
+
+````
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Node.js & npm
+- MongoDB (local or Atlas)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/todoapp.git
+cd todoapp
+
+# Install backend dependencies
+cd server
+npm install
+
+# Install frontend dependencies
+cd ../client
+npm install
+````
+
+### Run the App
+
+#### Start the backend server
+
+```bash
+cd server
+npm run dev
+```
+
+#### Start the frontend
+
+```bash
+cd client
+npm start
+```
+
+Frontend: [http://localhost:3000](http://localhost:3000)
+Backend: [http://localhost:5000](http://localhost:5000)
+
+## 📦 API Endpoints
+
+| Method | Endpoint                  | Description     |
+| ------ | ------------------------- | --------------- |
+| GET    | `/api/todos`              | Get all todos   |
+| POST   | `/api/todos`              | Create new todo |
+| PUT    | `/api/todos/:id`          | Update a todo   |
+| PUT    | `/api/todos/:id/complete` | Toggle complete |
+| DELETE | `/api/todos/:id`          | Delete a todo   |
+
+## 🧑‍💻 Author
+
+* Muhammad Sohail Shahzad
+
+## Github
+- `https://github.com/MSohailShahzad1/Todo-list.git`
